@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Про піч — VULKANO</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23FF4D14' d='M16 2c3 5-2 7 2 11 2-2 3-4 2-7 5 3 8 8 8 13a12 12 0 0 1-24 0C4 12 10 6 16 2z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Golos+Text:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-ember grain">
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">VULKA<span>N</span>O</a>
+    <nav class="nav-links">
+      <a href="menu.html">Меню</a>
+      <a href="about.html" class="active">Про піч</a>
+      <a href="tracking.html">Де моє замовлення</a>
+    </nav>
+    <button class="cart-btn">Кошик · <span class="count">0</span></button>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="padding-top:52px">
+    <div class="wrap split">
+      <div>
+        <p class="kicker reveal in">Про нас</p>
+        <h1 style="font-size:clamp(32px,4.4vw,58px)">
+          <span class="lw"><span class="li">Спершу була</span></span>
+          <span class="lw"><span class="li"><span class="fire-text">піч</span></span></span>
+        </h1>
+        <p class="muted reveal d1 in" style="margin:18px 0;max-width:50ch">
+          У 2021-му ми привезли з Неаполя тритонну піч, склали її по цеглині
+          та назвали Ф'юрі. Все інше — меню з дев'яти піц, закваска з дворічною
+          історією і команда з шести людей — виросло навколо неї.
+        </p>
+        <p class="muted reveal d2 in" style="margin-bottom:26px;max-width:50ch">
+          Ми випікаємо при 450 градусах: тісто здувається за секунди,
+          край обвуглюється рівно настільки, щоб дати той самий димний присмак.
+          Такого не зробить жодна електрична піч.
+        </p>
+        <a class="btn btn-fire mag reveal d3 in" href="menu.html">Спробувати</a>
+      </div>
+      <div class="imgw reveal in" data-plx>
+        <img src="assets/img/about-oven.jpg" alt="Наша піч Ф'юрі" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="facts">
+        <div class="fact reveal"><b>450°</b><span>температура печі</span></div>
+        <div class="fact reveal d1"><b>48 год</b><span>визріває тісто</span></div>
+        <div class="fact reveal d2"><b>9</b><span>піц у меню</span></div>
+        <div class="fact reveal d3"><b>30 хв</b><span>доставка або безкоштовно</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><h2 class="reveal">Де нас <span class="fire-text">знайти</span></h2></div>
+      <div class="steps">
+        <div class="step reveal" style="counter-increment:none"><h3>Адреса</h3><p>Київ, вул. Вогняна 9<br>щодня 11:00–23:00</p></div>
+        <div class="step reveal d1"><h3>Телефон</h3><p><a href="tel:+380441234567" style="color:var(--gold);text-decoration:none">+38 (044) 123 45 67</a><br>кол-центр 10:30–22:30</p></div>
+        <div class="step reveal d2"><h3>Доставка</h3><p>По Києву в межах кільцевої.<br>Від 600 ₴ — безкоштовно.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="index.html">VULKA<span>N</span>O</a>
+      <p class="about-f" style="margin-top:14px">Піцерія на дровах. Київ, вул. Вогняна 9. Щодня 11:00–23:00.</p>
+    </div>
+    <div>
+      <h4>Меню</h4>
+      <a href="menu.html">Всі піци</a>
+      <a href="menu.html">Гострі</a>
+      <a href="menu.html">Сирні</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <a href="tel:+380441234567">+38 (044) 123 45 67</a>
+      <a href="about.html">Про нас</a>
+      <a href="tracking.html">Трекер замовлення</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap"><span>© 2026 VULKANO. Демо-проєкт.</span><span>Зроблено з вогнем</span></div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/motion.js"></script>
+</body>
+</html>

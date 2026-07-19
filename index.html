@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VULKANO — піцерія на дровах · доставка гарячої піци</title>
+<meta name="description" content="Дров'яна піч 450°, тісто на заквасці 48 годин, доставка по місту за 30 хвилин.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath fill='%23FF4D14' d='M16 2c3 5-2 7 2 11 2-2 3-4 2-7 5 3 8 8 8 13a12 12 0 0 1-24 0C4 12 10 6 16 2z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;800&family=Golos+Text:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-ember grain">
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="logo" href="index.html">VULKA<span>N</span>O</a>
+    <nav class="nav-links">
+      <a href="menu.html">Меню</a>
+      <a href="about.html">Про піч</a>
+      <a href="tracking.html">Де моє замовлення</a>
+    </nav>
+    <button class="cart-btn">Кошик · <span class="count">0</span></button>
+    <button class="burger" aria-label="Меню"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <canvas class="embers" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>
+          <span class="lw"><span class="li">Піца,</span></span>
+          <span class="lw"><span class="li">народжена</span></span>
+          <span class="lw"><span class="li"><span class="fire-text">у вогні</span></span></span>
+        </h1>
+        <p class="sub reveal d1">Дров'яна піч, 450 градусів і 90 секунд — більше нічого. Тісто на заквасці 48 годин, томати сан-марцано, гаряча доставка за 30 хвилин.</p>
+        <div class="hero-cta reveal d2">
+          <a class="btn btn-fire mag" href="menu.html">Замовити зараз</a>
+          <a class="btn btn-ghost" href="menu.html">Дивитись меню</a>
+        </div>
+        <div class="hero-stats reveal d3">
+          <div class="stat"><b>450°</b><span>жар печі</span></div>
+          <div class="stat"><b>90 сек</b><span>випікання</span></div>
+          <div class="stat"><b>30 хв</b><span>доставка</span></div>
+        </div>
+      </div>
+      <div class="hero-img reveal d1" data-plx>
+        <img src="assets/img/hero.jpg" alt="Піца у дров'яній печі" fetchpriority="high">
+        <div class="tag">450°C</div>
+      </div>
+    </div>
+    <div class="marquee"><div class="marquee-in">ДРОВ'ЯНА ПІЧ&nbsp;&nbsp;•&nbsp;&nbsp;450°C&nbsp;&nbsp;•&nbsp;&nbsp;90 СЕКУНД&nbsp;&nbsp;•&nbsp;&nbsp;ДОСТАВКА 30 ХВ&nbsp;&nbsp;•&nbsp;&nbsp;ТІСТО 48 ГОДИН&nbsp;&nbsp;•&nbsp;&nbsp;ДРОВ'ЯНА ПІЧ&nbsp;&nbsp;•&nbsp;&nbsp;450°C&nbsp;&nbsp;•&nbsp;&nbsp;90 СЕКУНД&nbsp;&nbsp;•&nbsp;&nbsp;ДОСТАВКА 30 ХВ&nbsp;&nbsp;•&nbsp;&nbsp;ТІСТО 48 ГОДИН&nbsp;&nbsp;•&nbsp;&nbsp;</div></div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 class="reveal">Хіти <span class="fire-text">тижня</span></h2>
+        <div class="spacer"></div>
+        <a class="btn btn-ghost btn-sm reveal" href="menu.html">Все меню →</a>
+      </div>
+      <div class="grid" id="popular-grid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap split">
+      <div class="imgw reveal" data-plx>
+        <img src="assets/img/feature-cheese.jpg" alt="Тягучий сир" loading="lazy">
+      </div>
+      <div>
+        <p class="kicker reveal">Чому так смачно</p>
+        <h2 class="reveal d1">48 годин тіста.<br>90 секунд вогню.</h2>
+        <p class="muted reveal d2" style="margin:18px 0 26px;max-width:48ch">
+          Ми не поспішаємо там, де важливо, — тісто визріває на заквасці дві доби.
+          І не гаємо жодної секунди там, де вирішує жар: піца проводить у печі рівно 90 секунд
+          при 450 градусах. Тонкий хрусткий край, димний аромат, тягучий сир.
+        </p>
+        <a class="btn btn-fire mag reveal d3" href="about.html">Про нашу піч</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head"><h2 class="reveal">Як це <span class="fire-text">працює</span></h2></div>
+      <div class="steps">
+        <div class="step reveal"><h3>Обираєте піцу</h3><p>9 позицій, 3 розміри, борти й додатки — зберіть свою або довіртесь класиці.</p></div>
+        <div class="step reveal d1"><h3>Ми випікаємо</h3><p>Замовлення падає на кухню миттєво. Через 90 секунд у печі піца вже в коробці.</p></div>
+        <div class="step reveal d2"><h3>Кур'єр летить</h3><p>Термосумка тримає жар. Середній час доставки по місту — 30 хвилин, або піца за наш рахунок.</p></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div>
+      <a class="logo" href="index.html">VULKA<span>N</span>O</a>
+      <p class="about-f" style="margin-top:14px">Піцерія на дровах. Київ, вул. Вогняна 9. Щодня 11:00–23:00.</p>
+    </div>
+    <div>
+      <h4>Меню</h4>
+      <a href="menu.html">Всі піци</a>
+      <a href="menu.html">Гострі</a>
+      <a href="menu.html">Сирні</a>
+    </div>
+    <div>
+      <h4>Контакти</h4>
+      <a href="tel:+380441234567">+38 (044) 123 45 67</a>
+      <a href="about.html">Про нас</a>
+      <a href="tracking.html">Трекер замовлення</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <div class="wrap"><span>© 2026 VULKANO. Демо-проєкт.</span><span>Зроблено з вогнем</span></div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+<script src="js/motion.js"></script>
+</body>
+</html>
