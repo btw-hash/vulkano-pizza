@@ -107,7 +107,7 @@ function renderDrawer() {
   if (!items) return;
   const cart = getCart();
   if (!cart.length) {
-    items.innerHTML = `<div class="drawer-empty"><div class="big">440°</div>Кошик порожній.<br>Піч уже гаряча — обирайте піцу.</div>`;
+    items.innerHTML = `<div class="drawer-empty"><div class="big">440°</div>Кошик порожній.<br>Піч вже гаряча — обирайте піцу.</div>`;
     foot.innerHTML = `<a class="btn btn-fire btn-sm" style="width:100%" href="menu.html">До меню</a>`;
     return;
   }
@@ -358,7 +358,7 @@ function initCheckout() {
   const form = $('#checkout-form');
   if (!form) return;
   renderCartPage();
-  $('#promo-apply').addEventListener('click', () => {
+  $('#promo-apply')?.addEventListener('click', () => {
     const val = $('#promo-input').value.trim().toUpperCase();
     if (PROMO[val]) {
       promoApplied = val;
